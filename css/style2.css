@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/bg3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.container{
+    max-width: 85%;
+    margin: 0 auto;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.hero__container{
+    display: flex;
+    justify-content: space-between;
+}
+.hero__img{
+    width: 40%;
+    height: 100%;
+}
+.hero__img img{
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    animation-name: levitation;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+.hero__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.empty{
+    justify-content: center;
+}
+.cards img{
+    width: 40px;
+    height: 40px;
+}
+.cards button{
+    padding: 10px;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+footer{
+    margin-bottom: 20px;
+}
+.btn__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    max-width: 30%;
+    height: 100px;
+    margin-left: 70%;
+}
+.btn__container button{
+    background-color: rgb(61, 59, 59);
+    color: white;   
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+@keyframes levitation {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

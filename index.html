@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+  <div class="form-container">
+    <div id="login-form">
+      <h2>Вход</h2>
+      <input type="text" id="login-username" name="login-username" placeholder="Имя пользователя"><br>
+      <input type="password" id="login-password" name="login-password" placeholder="Пароль"><br>
+      <button onclick="login()">Войти</button>
+      
+      <div class="switch-form">
+        Нет аккаунта? <a href="#" onclick="showRegister()">Зарегистрируйтесь</a>
+      </div>
+    </div>
+    
+    <div id="register-form" style="display: none;">
+      <h2>Регистрация</h2>
+      <input type="text" id="register-username" name="register-username" placeholder="Имя пользователя"><br>
+      <input type="password" id="register-password" name="register-password" placeholder="Пароль"><br>
+      <button onclick="register()">Зарегистрироваться</button>
+      
+      <div class="switch-form">
+        Уже есть аккаунт? <a href="#" onclick="showLogin()">Войдите</a>
+      </div>
+    </div>
+  </div>
+  
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
